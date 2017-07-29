@@ -66,6 +66,8 @@ void main()
 		{
 			cleardevice();
 
+			Graphic::DrawBattleGround();
+
 			mainTank.Move();
 			mainTank.Display();
 		}

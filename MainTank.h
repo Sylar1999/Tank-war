@@ -8,13 +8,15 @@ class MainTank : public Tank
 public:
 	MainTank()
 	{
-		m_x = 400;
-		m_y = 300;
-		m_color = WHITE;
+		m_pos.Set(300, 300);
+
+		this->CalculateSphere();
+
+		m_color = GREEN;
 		m_dir = Dir::UP;
 		m_step = 2;
 	}
-
+	 
 	~MainTank() {}
 
 	// 设置行驶方向  
@@ -24,8 +26,10 @@ public:
 	void Move();
 
 protected:
+	void CalculateSphere();
+
 	// 绘制坦克主体  
-	void DrawTankBody(int style);
+	void DrawTankBody();
 };
 
 #endif  
