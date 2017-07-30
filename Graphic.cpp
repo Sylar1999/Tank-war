@@ -9,7 +9,8 @@ void Graphic::Create()
 	initgraph(SCREEN_WIDTH, SCREEN_HEIGHT);
 	setbkcolor(DARKGRAY);
 
-	m_rectBattleGround.Set(BATTLE_GROUND_X1, BATTLE_GROUND_Y1, BATTLE_GROUND_X2, BATTLE_GROUND_Y2);
+	m_rectBattleGround.Set(BATTLE_GROUND_X1, BATTLE_GROUND_Y1, 
+		BATTLE_GROUND_X2, BATTLE_GROUND_Y2);
 }
 
 void Graphic::Destroy()
