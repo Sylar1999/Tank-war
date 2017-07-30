@@ -9,6 +9,7 @@ enum Dir { UP, DOWN, LEFT, RIGHT };
 class Tank
 {
 public:
+	
 	//»æÍ¼
 	virtual void Display() = 0;
 	//ÒÆ¶¯
